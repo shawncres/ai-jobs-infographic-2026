@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Jobs 2026 • The New Frontier</title>
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="AI Jobs 2026 • The New Frontier">
+    <meta property="og:description" content="7 emerging AI roles exploding in demand. Interactive infographic with salaries, skills, and market data.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/shawncres/ai-jobs-infographic-2026">
+    <meta property="og:image" content="https://raw.githubusercontent.com/shawncres/ai-jobs-infographic-2026/main/AI_Jobs_2026_Poster.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        :root {
+            --primary: #6366f1;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .font-display {
+            font-family: 'Space Grotesk', 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .section-header {
+            background: linear-gradient(90deg, #6366f1, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .job-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .job-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .skill-pill {
+            background: rgba(99, 102, 241, 0.1);
+            color: #a5b4fc;
+            transition: all 0.2s ease;
+        }
+
+        .demand-bar {
+            height: 6px;
+            background: linear-gradient(90deg, #6366f1, #a855f7);
+            border-radius: 9999px;
+            transition: width 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #6366f1, #c026ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .category-agentic { border-color: #a855f7; }
+        .category-ops { border-color: #3b82f6; }
+        .category-safety { border-color: #14b8a6; }
+        .category-leadership { border-color: #f59e0b; }
+
+        .infographic-bg {
+            background: radial-gradient(at center, #0f172a 0%, #020617 100%);
+        }
+
+        .metric-value {
+            font-family: 'Space Grotesk', system_ui, sans-serif;
+            font-weight: 600;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 infographic-bg">
+    <!-- Header / Hero -->
+    <div class="max-w-7xl mx-auto px-6 pt-12 pb-8">
+        <div class="flex items-center justify-between mb-8">
+            <div class="flex items-center gap-x-3">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+                    <i class="fa-solid fa-robot text-white text-3xl"></i>
+                </div>
+                <div>
+                    <div class="text-sm tracking-[3px] text-slate-400 font-medium">2026 EDITION</div>
+                    <div class="text-3xl font-display tracking-tighter">THE AI JOB EXPLOSION</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-x-2 text-sm">
+                <div class="hidden md:flex items-center px-4 py-1.5 rounded-full bg-white/5 border border-white/10 gap-x-2">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    <span class="text-emerald-400 font-medium">Market heating up fast</span>
+                </div>
+                <!-- Share & Poster actions -->
+                <button onclick="shareInfographic()" 
+                        class="flex items-center gap-x-2 px-3 py-1.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors text-sm">
+                    <i class="fa-solid fa-share-alt"></i>
+                    <span class="hidden sm:inline">Share</span>
+                </button>
+                <button onclick="printPosterView()" 
+                        class="flex items-center gap-x-2 px-3 py-1.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors text-sm"
+                        title="Print-optimized view for the poster">
+                    <i class="fa-solid fa-print"></i>
+                    <span class="hidden sm:inline">Poster</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Hero Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div class="glass rounded-3xl p-6">
+                <div class="text-slate-400 text-sm mb-1">AI Skills Wage Premium</div>
+                <div class="metric-value text-6xl font-display tracking-tighter text-white">+56%</div>
+                <div class="text-xs text-slate-400 mt-2">PwC Global AI Jobs Barometer</div>
+            </div>
+            <div class="glass rounded-3xl p-6">
+                <div class="text-slate-400 text-sm mb-1">Agentic AI Role Growth</div>
+                <div class="metric-value text-6xl font-display tracking-tighter text-white">143%</div>
+                <div class="text-xs text-slate-400 mt-2">YoY demand surge in key markets</div>
+            </div>
+            <div class="glass rounded-3xl p-6">
+                <div class="text-slate-400 text-sm mb-1">LLMOps Salary Premium</div>
+                <div class="metric-value text-6xl font-display tracking-tighter text-white">+40%</div>
+                <div class="text-xs text-slate-400 mt-2">Over traditional MLOps roles</div>
+            </div>
+            <div class="glass rounded-3xl p-6">
+                <div class="text-slate-400 text-sm mb-1">AI Safety Uplift Since 2023</div>
+                <div class="metric-value text-6xl font-display tracking-tighter text-white">+45%</div>
+                <div class="text-xs text-slate-400 mt-2">Driven by regulation &amp; risk</div>
+            </div>
+        </div>
+
+        <div class="max-w-2xl">
+            <h1 class="text-6xl md:text-7xl font-display tracking-tighter leading-none mb-4">
+                7 new AI roles<br>
+                <span class="gradient-text">defining 2026</span>
+            </h1>
+            <p class="text-xl text-slate-400">
+                The shift from "build AI" to "run AI safely at scale" is creating entirely new job categories. 
+                Here are the roles exploding in demand right now.
+            </p>
+        </div>
+    </div>
+
+    <!-- Job Cards -->
+    <div class="max-w-7xl mx-auto px-6 pb-16">
+        <div class="flex items-end justify-between mb-6">
+            <div>
+                <span class="uppercase text-xs tracking-[2px] text-indigo-400 font-semibold">The Hottest Roles</span>
+                <h2 class="text-4xl font-display tracking-tight">Emerging AI Careers</h2>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="hidden md:flex items-center gap-2 text-sm">
+                <button onclick="filterJobs('all')" 
+                        class="filter-btn active px-4 py-2 rounded-2xl bg-white text-slate-900 font-medium flex items-center gap-x-2" id="filter-all">
+                    <i class="fa-solid fa-th-large"></i>
+                    <span>All</span>
+                </button>
+                <button onclick="filterJobs('agentic')" 
+                        class="filter-btn px-4 py-2 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors flex items-center gap-x-2" id="filter-agentic">
+                    <i class="fa-solid fa-project-diagram"></i>
+                    <span>Agentic</span>
+                </button>
+                <button onclick="filterJobs('ops')" 
+                        class="filter-btn px-4 py-2 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors flex items-center gap-x-2" id="filter-ops">
+                    <i class="fa-solid fa-server"></i>
+                    <span>Ops &amp; Scale</span>
+                </button>
+                <button onclick="filterJobs('safety')" 
+                        class="filter-btn px-4 py-2 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors flex items-center gap-x-2" id="filter-safety">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Safety &amp; Trust</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Jobs Grid (data-driven) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5" id="jobs-grid">
+            <!-- Populated dynamically by renderJobs() from ROLES data -->
+        </div>
+    </div>
+
+    <!-- Bottom Insight Section -->
+    <div class="max-w-7xl mx-auto px-6 pb-20">
+        <div class="glass rounded-3xl p-8 md:p-10">
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-8">
+                <div>
+                    <div class="uppercase text-indigo-400 tracking-widest text-xs font-semibold mb-3">THE BIG SHIFT</div>
+                    <h3 class="text-3xl font-display tracking-tight mb-4">From prototyping to production-grade AI</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        The market has moved past "can we build a demo?" to "can we run this reliably, safely, and cost-effectively in production with real users and regulatory scrutiny?"
+                    </p>
+                </div>
+                
+                <div class="space-y-5">
+                    <div class="flex gap-4">
+                        <div class="text-3xl font-display text-white/30 w-8">01</div>
+                        <div>
+                            <div class="font-semibold">Agentic systems are the new normal</div>
+                            <div class="text-sm text-slate-400">Companies aren't just calling APIs — they're deploying teams of agents.</div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-3xl font-display text-white/30 w-8">02</div>
+                        <div>
+                            <div class="font-semibold">Trust &amp; cost are now first-class concerns</div>
+                            <div class="text-sm text-slate-400">LLMOps, safety, and governance roles exist because inference is expensive and mistakes are costly.</div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-3xl font-display text-white/30 w-8">03</div>
+                        <div>
+                            <div class="font-semibold">The highest leverage is at the intersection</div>
+                            <div class="text-sm text-slate-400">The best opportunities sit between deep technical skill and business/regulatory understanding.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-8 text-xs text-slate-500 flex flex-col md:flex-row justify-between gap-y-3">
+            <div>
+                Data synthesized from 2025–2026 reports: PwC AI Jobs Barometer, KORE1, Robert Half, Levels.fyi, Glassdoor, and industry analyses.
+            </div>
+            <div class="flex items-center gap-x-1.5">
+                <span>Created in Grok Build Projects</span>
+                <span class="hidden md:inline">•</span>
+                <span class="text-slate-600">May 2026</span>
+                <span class="hidden md:inline">•</span>
+                <a href="https://github.com/shawncres/ai-jobs-infographic-2026" target="_blank" rel="noopener"
+                   class="hover:text-slate-300 transition-colors">Source on GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Single source of truth for roles (keeps README + UI in sync)
+        const ROLES = [
+            {
+                id: "ai-agent-architect",
+                title: "AI Agent Architect",
+                category: "agentic",
+                categoryLabel: "AGENTIC",
+                salary: "$180K – $280K+",
+                demand: "Extremely High",
+                demandPercent: 95,
+                description: "Designs and orchestrates autonomous multi-agent systems that plan, use tools, and execute complex workflows with minimal supervision.",
+                icon: "fa-sitemap",
+                iconColor: "purple",
+                skills: ["LangGraph", "CrewAI", "Tool Calling", "Guardrails"]
+            },
+            {
+                id: "context-engineer",
+                title: "Context Engineer",
+                category: "agentic",
+                categoryLabel: "EMERGING",
+                salary: "$155K – $235K",
+                demand: "Very High",
+                demandPercent: 88,
+                description: "The new \"knowledge architect\" role. Builds dynamic context systems, RAG pipelines, memory layers, and retrieval strategies that make agents actually reliable.",
+                icon: "fa-brain",
+                iconColor: "purple",
+                skills: ["RAG", "Vector DBs", "Memory Systems", "Chunking"]
+            },
+            {
+                id: "llmops-engineer",
+                title: "LLMOps Engineer",
+                category: "ops",
+                categoryLabel: "OPS & SCALE",
+                salary: "$165K – $255K",
+                demand: "Extremely High",
+                demandPercent: 92,
+                description: "The production engineers of the LLM era. Own inference optimization, cost control, evaluation pipelines, versioning, monitoring, and reliable deployment at scale.",
+                icon: "fa-cloud",
+                iconColor: "blue",
+                skills: ["vLLM / TGI", "Kubernetes", "Prompt Ops", "Observability"]
+            },
+            {
+                id: "ai-red-teamer",
+                title: "AI Red Teamer",
+                category: "safety",
+                categoryLabel: "SAFETY",
+                salary: "$150K – $230K",
+                demand: "High",
+                demandPercent: 78,
+                description: "Professional adversary. Stress-tests frontier models, finds jailbreaks, simulates sophisticated attacks, and hardens guardrails before real-world deployment.",
+                icon: "fa-user-secret",
+                iconColor: "teal",
+                skills: ["Adversarial ML", "Jailbreak Research", "Threat Modeling", "Prompt Injection"]
+            },
+            {
+                id: "ai-safety-engineer",
+                title: "AI Safety Engineer",
+                category: "safety",
+                categoryLabel: "SAFETY",
+                salary: "$160K – $250K+",
+                demand: "Very High",
+                demandPercent: 85,
+                description: "Builds the technical foundations for trustworthy AI: evaluations, interpretability, scalable oversight, constitutional AI, and robustness testing.",
+                icon: "fa-shield-halved",
+                iconColor: "teal",
+                skills: ["Evals", "Interpretability", "RLHF", "Constitutional AI"]
+            },
+            {
+                id: "ai-governance-lead",
+                title: "AI Governance Lead",
+                category: "safety",
+                categoryLabel: "GOVERNANCE",
+                salary: "$140K – $215K",
+                demand: "High",
+                demandPercent: 72,
+                description: "Translates regulation into practice. Builds responsible AI frameworks, runs risk assessments, ensures EU AI Act / NIST compliance, and manages AI audit programs.",
+                icon: "fa-balance-scale",
+                iconColor: "teal",
+                skills: ["EU AI Act", "Risk Classification", "AI Audits", "Policy"]
+            },
+            {
+                id: "chief-ai-officer",
+                title: "Chief AI Officer (CAIO)",
+                category: "leadership",
+                categoryLabel: "LEADERSHIP",
+                salary: "$250K – $500K+",
+                demand: "Explosive",
+                demandPercent: 90,
+                description: "The newest C-suite role. Owns enterprise-wide AI strategy, talent, risk posture, investment decisions, and how AI transforms the entire business model.",
+                icon: "fa-user-tie",
+                iconColor: "amber",
+                skills: ["Strategy", "Board Communication", "AI ROI", "Org Transformation"]
+            }
+        ];
+
+        function createJobCard(role) {
+            const iconColorClass = {
+                purple: "bg-purple-500/10 text-purple-400",
+                blue: "bg-blue-500/10 text-blue-400",
+                teal: "bg-teal-500/10 text-teal-400",
+                amber: "bg-amber-500/10 text-amber-400"
+            }[role.iconColor] || "bg-purple-500/10 text-purple-400";
+
+            const demandColor = {
+                "Extremely High": "text-purple-400",
+                "Very High": "text-purple-400",
+                "High": "text-teal-400",
+                "Explosive": "text-amber-400"
+            }[role.demand] || "text-slate-400";
+
+            const categoryBorder = {
+                agentic: "category-agentic",
+                ops: "category-ops",
+                safety: "category-safety",
+                leadership: "category-leadership"
+            }[role.category] || "category-agentic";
+
+            const skillsHTML = role.skills.map(skill => 
+                `<div class="skill-pill text-xs px-3 py-1 rounded-full">${skill}</div>`
+            ).join('');
+
+            return `
+                <div class="job-card glass rounded-3xl p-6 border-l-4 ${categoryBorder}" data-category="${role.category}">
+                    <div class="flex justify-between items-start mb-5">
+                        <div class="w-12 h-12 rounded-2xl ${iconColorClass} flex items-center justify-center">
+                            <i class="fa-solid ${role.icon} text-2xl"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs px-3 py-1 rounded-full ${iconColorClass} font-medium">${role.categoryLabel}</div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-semibold tracking-tight mb-1">${role.title}</h3>
+                    <div class="text-emerald-400 font-semibold text-xl mb-3">${role.salary}</div>
+                    
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        ${role.description}
+                    </p>
+                    
+                    <div class="mb-4">
+                        <div class="flex justify-between text-xs mb-1.5">
+                            <span class="text-slate-400">Demand Velocity</span>
+                            <span class="font-semibold ${demandColor}">${role.demand}</span>
+                        </div>
+                        <div class="h-1.5 bg-white/10 rounded-full overflow-hidden">
+                            <div class="demand-bar w-[${role.demandPercent}%]"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-1.5">
+                        ${skillsHTML}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderJobs(roles) {
+            const container = document.getElementById('jobs-grid');
+            if (!container) return;
+            container.innerHTML = roles.map(createJobCard).join('');
+        }
+
+        function filterJobs(category) {
+            const cards = document.querySelectorAll('.job-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active', 'bg-white', 'text-slate-900'));
+            buttons.forEach(btn => btn.classList.add('bg-white/5'));
+            
+            const activeBtn = document.getElementById(`filter-${category}`);
+            if (activeBtn) {
+                activeBtn.classList.add('active', 'bg-white', 'text-slate-900');
+                activeBtn.classList.remove('bg-white/5');
+            } else {
+                document.getElementById('filter-all').classList.add('active', 'bg-white', 'text-slate-900');
+            }
+            
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = '';
+                } else {
+                    card.style.display = (card.dataset.category === category) ? '' : 'none';
+                }
+            });
+        }
+
+        // Share functionality
+        async function shareInfographic() {
+            const shareData = {
+                title: 'AI Jobs 2026 • The New Frontier',
+                text: '7 emerging AI roles exploding in demand — salaries, skills & market data.',
+                url: window.location.href
+            };
+            
+            if (navigator.share) {
+                try { await navigator.share(shareData); } catch (_) {}
+            } else {
+                try {
+                    await navigator.clipboard.writeText(`${shareData.title}\n${shareData.text}\n${shareData.url}`);
+                    const btn = event.currentTarget;
+                    const originalText = btn ? btn.innerHTML : '';
+                    if (btn) btn.innerHTML = '<i class="fa-solid fa-check"></i> <span>Copied!</span>';
+                    setTimeout(() => { if (btn) btn.innerHTML = originalText; }, 1800);
+                } catch (_) {
+                    window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(shareData.url), '_blank');
+                }
+            }
+        }
+
+        function printPosterView() {
+            const grid = document.getElementById('jobs-grid');
+            const originalDisplay = grid ? grid.style.display : '';
+            if (grid) grid.style.display = 'grid';
+            window.print();
+            setTimeout(() => { if (grid) grid.style.display = originalDisplay; }, 500);
+        }
+
+        // Keyboard support
+        document.addEventListener('keydown', function(e) {
+            if (e.key === '/') {
+                const allBtn = document.getElementById('filter-all');
+                if (document.activeElement.tagName === 'BUTTON') return;
+                e.preventDefault();
+                filterJobs('all');
+            }
+            if (e.key.toLowerCase() === '?') {
+                e.preventDefault();
+                const cards = document.querySelectorAll('.job-card');
+                cards.forEach(card => {
+                    const text = card.textContent || '';
+                    const show = text.includes('280K') || text.includes('500K') || text.includes('250K');
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+        });
+
+        function animateCards() {
+            const cards = document.querySelectorAll('.job-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = `all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) ${index * 60}ms`;
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 120);
+            });
+        }
+
+        function initFilters() {
+            const allBtn = document.getElementById('filter-all');
+            if (allBtn) {
+                allBtn.classList.add('bg-white', 'text-slate-900');
+            }
+            // Mobile: show filter buttons in a scrollable row if needed
+            const filterRow = document.querySelector('.flex.items-end.justify-between.mb-6');
+            if (filterRow && window.innerWidth < 768) {
+                filterRow.classList.add('flex-wrap', 'gap-2');
+            }
+        }
+
+        // Initialize everything
+        window.onload = function() {
+            renderJobs(ROLES);
+            animateCards();
+            initFilters();
+            
+            console.log('%c[AI Jobs 2026] Infographic ready. Data-driven. Press / to reset filters, ? for top salaries.', 'color:#64748b');
+        };
+
+        // Expose for debugging / future scripts
+        window.AI_JOBS_2026 = { ROLES, filterJobs, renderJobs, shareInfographic, printPosterView };
+    </script>
+</body>
+</html>

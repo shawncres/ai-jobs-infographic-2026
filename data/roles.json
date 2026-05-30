@@ -1,0 +1,93 @@
+[
+  {
+    "id": "ai-agent-architect",
+    "title": "AI Agent Architect",
+    "category": "agentic",
+    "categoryLabel": "AGENTIC",
+    "salary": "$180K – $280K+",
+    "demand": "Extremely High",
+    "demandPercent": 95,
+    "description": "Designs and orchestrates autonomous multi-agent systems that plan, use tools, and execute complex workflows with minimal supervision.",
+    "icon": "fa-sitemap",
+    "iconColor": "purple",
+    "skills": ["LangGraph", "CrewAI", "Tool Calling", "Guardrails"]
+  },
+  {
+    "id": "context-engineer",
+    "title": "Context Engineer",
+    "category": "agentic",
+    "categoryLabel": "EMERGING",
+    "salary": "$155K – $235K",
+    "demand": "Very High",
+    "demandPercent": 88,
+    "description": "The new \"knowledge architect\" role. Builds dynamic context systems, RAG pipelines, memory layers, and retrieval strategies that make agents actually reliable.",
+    "icon": "fa-brain",
+    "iconColor": "purple",
+    "skills": ["RAG", "Vector DBs", "Memory Systems", "Chunking"]
+  },
+  {
+    "id": "llmops-engineer",
+    "title": "LLMOps Engineer",
+    "category": "ops",
+    "categoryLabel": "OPS & SCALE",
+    "salary": "$165K – $255K",
+    "demand": "Extremely High",
+    "demandPercent": 92,
+    "description": "The production engineers of the LLM era. Own inference optimization, cost control, evaluation pipelines, versioning, monitoring, and reliable deployment at scale.",
+    "icon": "fa-cloud",
+    "iconColor": "blue",
+    "skills": ["vLLM / TGI", "Kubernetes", "Prompt Ops", "Observability"]
+  },
+  {
+    "id": "ai-red-teamer",
+    "title": "AI Red Teamer",
+    "category": "safety",
+    "categoryLabel": "SAFETY",
+    "salary": "$150K – $230K",
+    "demand": "High",
+    "demandPercent": 78,
+    "description": "Professional adversary. Stress-tests frontier models, finds jailbreaks, simulates sophisticated attacks, and hardens guardrails before real-world deployment.",
+    "icon": "fa-user-secret",
+    "iconColor": "teal",
+    "skills": ["Adversarial ML", "Jailbreak Research", "Threat Modeling", "Prompt Injection"]
+  },
+  {
+    "id": "ai-safety-engineer",
+    "title": "AI Safety Engineer",
+    "category": "safety",
+    "categoryLabel": "SAFETY",
+    "salary": "$160K – $250K+",
+    "demand": "Very High",
+    "demandPercent": 85,
+    "description": "Builds the technical foundations for trustworthy AI: evaluations, interpretability, scalable oversight, constitutional AI, and robustness testing.",
+    "icon": "fa-shield-halved",
+    "iconColor": "teal",
+    "skills": ["Evals", "Interpretability", "RLHF", "Constitutional AI"]
+  },
+  {
+    "id": "ai-governance-lead",
+    "title": "AI Governance Lead",
+    "category": "safety",
+    "categoryLabel": "GOVERNANCE",
+    "salary": "$140K – $215K",
+    "demand": "High",
+    "demandPercent": 72,
+    "description": "Translates regulation into practice. Builds responsible AI frameworks, runs risk assessments, ensures EU AI Act / NIST compliance, and manages AI audit programs.",
+    "icon": "fa-balance-scale",
+    "iconColor": "teal",
+    "skills": ["EU AI Act", "Risk Classification", "AI Audits", "Policy"]
+  },
+  {
+    "id": "chief-ai-officer",
+    "title": "Chief AI Officer (CAIO)",
+    "category": "leadership",
+    "categoryLabel": "LEADERSHIP",
+    "salary": "$250K – $500K+",
+    "demand": "Explosive",
+    "demandPercent": 90,
+    "description": "The newest C-suite role. Owns enterprise-wide AI strategy, talent, risk posture, investment decisions, and how AI transforms the entire business model.",
+    "icon": "fa-user-tie",
+    "iconColor": "amber",
+    "skills": ["Strategy", "Board Communication", "AI ROI", "Org Transformation"]
+  }
+]
