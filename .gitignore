@@ -1,0 +1,14 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Local only
+*.local
+.env
+.idea/
+.vscode/
+
+# Large binaries (poster is committed intentionally)
+# If you want to ignore the poster in some clones, add it here locally only.
